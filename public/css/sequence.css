@@ -1,0 +1,576 @@
+/*-------------------------------------------------------------------------------------
+Theme Name: Soho
+Theme URI: http://demo.jthemes.net/soho/
+Author: JThemes
+Author URI: http://www.jthemes.net/
+Description: Soho Responsive HTML5/CSS3 Theme.
+Version: 1.0
+Tags: clean, light, white, custom colors, portfolio, business, corporate, blog
+-------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------
+/*	1.1 Slider style
+/*-----------------------------------------------------------------------------------*/
+
+#sequence {
+	display: block;
+	margin: 0 auto;
+	width: 960px;
+	height: 450px;
+	overflow: hidden\9;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+#sequence li {
+	height: 100%;
+	top: 0;
+	width: 100%;
+}
+
+#sequence li * {
+	position: absolute;
+}
+
+#sequence h1 {
+	font-size: 44px;
+	line-height: 50px;
+	font-style: italic;
+}
+
+#sequence h3 {
+	font-style: italic;
+}
+
+.sequence-preloader {
+	max-width: 960px;
+}
+
+#sequence .next,
+#sequence .prev,
+#sequence .pause {
+	cursor: pointer;
+	display: none;
+	position: absolute;
+	margin-top: -64px;
+	top: 50%;
+	z-index: 1000;
+	opacity: 0;
+	-webkit-transition-duration: .8s;
+	-moz-transition-duration: .8s;
+	-o-transition-duration: .8s;
+	-ms-transition-duration: .8s;
+	transition-duration: .8s;
+}
+
+#sequence:hover .next,
+#sequence:hover .prev,
+#sequence:hover .pause {
+	opacity: 1;
+}
+
+#sequence .pause {
+	margin-left: -64px;
+	left: 50%;
+}
+
+#sequence .paused {
+	opacity: 0;
+}
+
+#sequence .prev {
+	left: 0;
+}
+
+#sequence .next {
+	right: 0;
+}
+
+#sequence .prev img,
+#sequence .next img,
+#sequence .pause img {
+	height: 100%;
+	width: auto;
+}
+
+#sequence-nav {
+	position: absolute;
+	margin: 0 auto;
+	padding: 5px 0;
+	max-width: 940px;
+	width: 100%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+	z-index: 999;
+	opacity: 0;
+	-webkit-transition-duration: .8s;
+	-moz-transition-duration: .8s;
+	-o-transition-duration: .8s;
+	-ms-transition-duration: .8s;
+	transition-duration: .8s;
+}
+
+#sequence:hover + #sequence-nav,
+#sequence-nav:hover {
+	opacity: 1;
+}
+
+#sequence-nav li {
+	display: inline-block;
+	display: inline\9;
+}
+
+#sequence-nav li img {
+	cursor: pointer;
+	opacity: 0.5;
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	-ms-transition-duration: 1s;
+	transition-duration: 1s;
+}
+
+#sequence-nav li img:hover,
+#sequence-nav li img.active {
+	opacity: 1;
+}
+
+/*-------------------------------------------------------------------------------------
+/*	1.2 CSS3 Effects
+/*-----------------------------------------------------------------------------------*/
+
+/*	Frame One
+/*-----------------------------------------------------------------------------------*/
+
+.title-top,
+.subtitle-top {
+	display: block;
+	left: 10px;
+	top: -60px;
+	width: 940px;
+	text-align: center;
+	opacity: 0;
+	z-index: 50;
+}
+
+.title-top.animate-in,
+.subtitle-top.animate-in {
+	opacity: 1;
+	top: 20px;
+	-webkit-transition-duration: .5s;
+	-moz-transition-duration: .5s;
+	-o-transition-duration: .5s;
+	-ms-transition-duration: .5s;
+	transition-duration: .5s;
+}
+
+.title-top.animate-out,
+.subtitle-top.animate-out {
+	opacity: 0;
+	top: -60px;
+	-webkit-transition-duration: .5s;
+	-moz-transition-duration: .5s;
+	-o-transition-duration: .5s;
+	-ms-transition-duration: .5s;
+	transition-duration: .5s;
+}
+.subtitle-top {
+	top: 155px;
+}
+
+.subtitle-top.animate-in {
+	top: 75px;
+}
+
+.subtitle-top.animate-out {
+	top: -5px;
+}
+
+.soho-br {
+	bottom: -150px;
+	opacity: 0;
+	position: relative;
+	height: 450px;
+	z-index: 80;
+}
+
+.soho-br.animate-in {
+	bottom: 0;
+	opacity: 1;
+	-webkit-transition-duration: .5s;
+	-moz-transition-duration: .5s;
+	-o-transition-duration: .5s;
+	-ms-transition-duration: .5s;
+	transition-duration: .5s;
+}
+
+.soho-br.animate-out {
+	bottom: -150px;
+	opacity: 0;
+	-webkit-transition-duration: .5s;
+	-moz-transition-duration: .5s;
+	-o-transition-duration: .5s;
+	-ms-transition-duration: .5s;
+	transition-duration: .5s;
+}
+
+/*	Frame Two
+/*-----------------------------------------------------------------------------------*/
+
+.title-right,
+.subtitle-right {
+	left: 1300px;
+	top: 110px;
+	width: 388px;
+	opacity: 0;
+	z-index: 50;
+}
+
+.title-right.animate-in,
+.subtitle-right.animate-in {
+	left: 550px;
+	opacity: 1;
+
+	-webkit-transition-duration: .5s;
+	-moz-transition-duration: .5s;
+	-o-transition-duration: .5s;
+	-ms-transition-duration: .5s;
+	transition-duration: .5s;
+}
+
+.title-right.animate-out,
+.subtitle-right.animate-out {
+	left: 1300px;
+	opacity: 0;
+
+	-webkit-transition-duration: .5s;
+	-moz-transition-duration: .5s;
+	-o-transition-duration: .5s;
+	-ms-transition-duration: .5s;
+	transition-duration: .5s;
+}
+
+.subtitle-right {
+	top: 165px;
+}
+
+.btn-right-1,
+.btn-right-2 {
+	left: 552px;
+	bottom: -200px;
+	opacity: 0;
+	-webkit-transition-property: opacity, bottom;
+	-moz-transition-property: opacity, bottom;
+	-o-transition-property: opacity, bottom;
+	-ms-transition-property: opacity, bottom;
+	transition-property: opacity, bottom;
+}
+
+.btn-right-1.animate-in,
+.btn-right-2.animate-in {
+	bottom: 115px;
+	opacity: 1;
+
+	-webkit-transition-duration: .5s;
+	-moz-transition-duration: .5s;
+	-o-transition-duration: .5s;
+	-ms-transition-duration: .5s;
+	transition-duration: .5s;
+}
+
+.btn-right-1.animate-out,
+.btn-right-2.animate-out {
+	bottom: -200px;
+	opacity: 0;
+
+	-webkit-transition-duration: .5s;
+	-moz-transition-duration: .5s;
+	-o-transition-duration: .5s;
+	-ms-transition-duration: .5s;
+	transition-duration: .5s;
+}
+
+.btn-right-2 {
+	left: 750px;
+}
+
+.vimeo-video {
+	padding: 5px;
+	left: -500px;
+	bottom: 80px;
+	opacity: 0;
+	visibility: hidden;
+	position: relative;
+	background: #fff;
+	border: solid 1px #ddd;
+	-webkit-box-shadow: 0 0 5px rgba(0,0,0,.1);
+	-moz-box-shadow: 0 0 5px rgba(0,0,0,.1);
+	box-shadow: 0 0 5px rgba(0,0,0,.1);
+	-o-transition-property: opacity, left;
+}
+
+.vimeo-video.animate-in {
+	left: 10px;
+	opacity: 1;
+	visibility: visible;
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	-ms-transition-duration: 1s;
+	transition-duration: 1s;
+}
+
+.vimeo-video.animate-out {
+	left: -500px;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition-duration: .5s;
+	-moz-transition-duration: .5s;
+	-o-transition-duration: .5s;
+	-ms-transition-duration: .5s;
+	transition-duration: .5s;
+}
+
+/*-------------------------------------------------------------------------------------
+/*	1.3 Media queries
+/*-----------------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	#sequence {
+		width: 768px;
+		height: 360px;
+	}
+
+	#sequence-nav {
+		padding: 0;
+	}
+
+	/*	Frame One
+	/*-----------------------------------------------------------------------------------*/
+
+	.title-top,
+	.subtitle-top {
+		width: 748px;
+	}
+
+	.title-top.animate-in {
+		top: 10px;
+	}
+
+	.subtitle-top.animate-in {
+		top: 65px;
+	}
+
+	.soho-br {
+		width: 100%;
+		height: auto;
+	}
+
+	/*	Frame Two
+	/*-----------------------------------------------------------------------------------*/
+
+	.title-right,
+	.subtitle-right {
+		top: 78px;
+		width: 320px;
+	}
+
+	.title-right.animate-in,
+	.subtitle-right.animate-in {
+		left: 447px;
+	}
+
+	.subtitle-right {
+		top: 130px;
+	}
+
+	.btn-right-1,
+	.btn-right-2 {
+		left: 447px;
+		width: 145px;
+	}
+
+	.btn-right-1.animate-in,
+	.btn-right-2.animate-in {
+		bottom: 82px;
+	}
+
+	.btn-right-2 {
+		left: 612px;
+	}
+
+	.vimeo-video {
+		width: 400px;
+		height: 224px;
+		bottom: 64px;
+	}
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+	#sequence {
+		width: 480px;
+		height: 225px;
+	}
+
+	#sequence .next,
+	#sequence .prev {
+		width: 32px;
+		margin-top: -32px;
+	}
+
+	#sequence .pause {
+		width: 64px;
+		margin-top: -32px;
+		margin-left: -32px;
+	}
+
+	#sequence-nav {
+		padding: 2px 0;
+	}
+
+	/*	Frame One
+	/*-----------------------------------------------------------------------------------*/
+
+	.title-top,
+	.subtitle-top {
+		width: 460px;
+	}
+
+	#sequence h1 {
+		font-size: 30px;
+		line-height: 36px;
+	}
+
+	#sequence h3 {
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.title-top.animate-in {
+		top: 5px;
+	}
+
+	.subtitle-top.animate-in {
+		top: 40px;
+	}
+
+	.soho-br {
+		width: 100%;
+		height: auto;
+	}
+
+	/*	Frame Two
+	/*-----------------------------------------------------------------------------------*/
+	.title-right,
+	.subtitle-right {
+		top: 60px;
+	}
+
+	.title-right.animate-in,
+	.subtitle-right.animate-in {
+		left: 10px;
+		right: 10px;
+		width: 460px;
+		text-align: center;
+	}
+
+	.subtitle-right {
+		top: 110px;
+	}
+
+	.btn-right-1,
+	.btn-right-2,
+	.vimeo-video,
+	.vimeo-video.animate-in,
+	.vimeo-video.animate-out {
+		visibility: hidden;
+		opacity: 0;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	#sequence {
+		width: 320px;
+		height: 180px;
+	}
+
+	#sequence .next,
+	#sequence .prev {
+		width: 32px;
+		margin-top: -32px;
+	}
+
+	#sequence .pause {
+		width: 64px;
+		margin-top: -32px;
+		margin-left: -32px;
+	}
+
+	#sequence-nav {
+		padding: 0;
+	}
+
+	/*	Frame One
+	/*-----------------------------------------------------------------------------------*/
+
+	.title-top,
+	.subtitle-top {
+		max-width: 300px;
+	}
+
+	#sequence h1 {
+		font-size: 22px;
+		line-height: 28px;
+	}
+
+	#sequence h3 {
+		font-size: 13px;
+		line-height: 18px;
+	}
+
+	.title-top.animate-in {
+		top: 5px;
+	}
+
+	.subtitle-top.animate-in {
+		top: 32px;
+	}
+
+	.soho-br {
+		width: 100%;
+		height: auto;
+	}
+
+	/*	Frame Two
+	/*-----------------------------------------------------------------------------------*/
+	.title-right,
+	.subtitle-right {
+		top: 40px;
+	}
+
+	.title-right.animate-in,
+	.subtitle-right.animate-in {
+		left: 10px;
+		right: 10px;
+		width: 280px;
+		text-align: center;
+	}
+
+	.subtitle-right {
+		top: 90px;
+	}
+
+	.btn-right-1,
+	.btn-right-2,
+	.vimeo-video,
+	.vimeo-video.animate-in,
+	.vimeo-video.animate-out {
+		visibility: hidden;
+		opacity: 0;
+	}
+}
