@@ -70,10 +70,10 @@ return array(
 
 		'mysql' => array(
 			'driver'   => 'mysql',
-			'host'     => 'localhost',
-			'database' => 'laravel',
-			'username' => 'root',
-			'password' => '',
+			'host'     => 'tunnel.pagodabox.com:3306',
+			'database' => 'emsigroupe',
+			'username' => 'hortense',
+			'password' => 'hneA63M7',
 			'charset'  => 'utf8',
 			'prefix'   => '',
 		),
